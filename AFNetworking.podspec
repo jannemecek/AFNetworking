@@ -76,13 +76,4 @@ EOS
     ss.source_files = 'AFNetworking/AF{URL,HTTP}SessionManager.{h,m}'
     ss.public_header_files = 'AFNetworking/AF{URL,HTTP}SessionManager.h'
   end
-
-  s.subspec 'UIKit' do |ss|
-    ss.platform = :ios
-    ss.dependency 'AFNetworking/NSURLConnection'
-    ss.dependency 'AFNetworking/NSURLSession'
-
-    ss.public_header_files = 'UIKit+AFNetworking/*.h'
-    ss.source_files = 'UIKit+AFNetworking'
-  end
 end
